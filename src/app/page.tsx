@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Suspense } from "react"
 import { Counter } from "@/components/counter"
 import { Greeting } from "@/components/greeting"
@@ -48,6 +49,10 @@ export default function Home() {
             </li>
           ))}
         </ul>
+
+        <nav>
+          <Link href="/page-2">Page 2</Link>
+        </nav>
       </main>
     </div>
   )
